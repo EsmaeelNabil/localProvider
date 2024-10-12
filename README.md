@@ -45,6 +45,10 @@ fun LoginScreen() {
 }
 ```
 
+[poc.webm](https://github.com/user-attachments/assets/e5068beb-465d-4ca6-bb98-e86b0810d4d4)
+
+
+
 Supported types and their initial value are
 
 ``` javascript
