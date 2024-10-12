@@ -89,6 +89,13 @@ data class YourDataClass(val yourValue: Map<String, Int> = emptyMap())
 > [!IMPORTANT]
 > Provide default values for all variables in the data class
 
+provider
+
+```kotlin
+@ProvidesLocalOf(type = YourDataClass::class)
+interface LoginInfo
+```
+
 ##### Under the hood Generations
 
 Generated code, when you use the `@ProvidesLocalOf` with `type` `String::class`
