@@ -13,9 +13,11 @@ interface LoginInfo
 
 Now you have access to
 ```kotlin
+// wrap your composables root with this
 ProvideLocalLoginInfo {
     // and in your composable and it's children
-    val info = LocalLoginInfo.current 
+    val info = LocalLoginInfo.current
+    // add your composables here
 }
 ```
 
