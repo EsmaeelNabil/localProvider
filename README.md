@@ -11,8 +11,11 @@ this is the only thing you need to do to create a local stateful provider
 interface LoginInfo
 ```
 
-now you have access to the `LocalLoginInfo` in your composable and it's children
+now you have access to `ProvideLocalLoginInfo{ LocalLoginInfo.current }` and `LocalLoginInfo.current` in your composable and it's children
 
+---
+
+#### Example 
 ```kotlin
 @Composable
 fun HomeScreen() {
