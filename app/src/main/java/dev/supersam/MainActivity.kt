@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalFoundationApi::class)
 
-package com.supersam.dev
+package dev.supersam
 
 import ProvideLocalLoginInfo
 import android.os.Bundle

@@ -10,13 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Systemdesign"
+        android:theme="@style/Theme.LocalProvider"
         tools:targetApi="31">
         <activity
-            android:name="com.supersam.dev.MainActivity"
+            android:name="dev.supersam.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Systemdesign">
+            android:theme="@style/Theme.LocalProvider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "de.thermondo.systemdesign"
+    namespace = "dev.supersam"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "de.thermondo.systemdesign"
+        applicationId = "dev.supersam"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

@@ -1,12 +1,10 @@
-package com.supersam.dev
-
+package dev.supersam
 
 import LocalLoginInfo
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -20,7 +18,7 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import kotlin.random.Random
 
-class LoginScreen : Screen {
+class ParentScreen : Screen {
     @Composable
     override fun Content() {
 
@@ -33,33 +31,27 @@ class LoginScreen : Screen {
         ) {
 
             Text(
+                modifier = Modifier.padding(24.dp),
                 text = localState.mutableValue,
                 fontSize = 30.sp,
                 color = Color.Blue
             )
 
-            Spacer(modifier = Modifier.height(16.dp))
-
             Row {
-
-                Button(
-                    onClick = { navigator.pop() }
-                ) {
-                    Text("Back")
+                Button(onClick = {
+                    navigator.push(LoginScreen())
+                }) {
+                    Text("Navigate ->")
                 }
 
-                Button(
-                    onClick = {
-                        localState.mutableValue = Random.nextInt().toString()
-                    }
-                ) {
-                    Text("Randomize Return value")
+                Button(onClick = {
+                    localState.mutableValue = Random.nextInt(0, 1000000).toString()
+                }) {
+                    Text("Randomize")
                 }
-
-
             }
+
+
         }
-
     }
-
 }

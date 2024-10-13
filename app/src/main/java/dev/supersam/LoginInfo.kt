@@ -1,4 +1,4 @@
-package com.supersam.dev
+package dev.supersam
 
 import ProvidesLocalOf
 
