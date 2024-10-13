@@ -108,8 +108,8 @@ class LoginInfoStateHolder(string: String = "") : LoginInfo {
 }
 
 @Composable
-fun ProvideLocalScreenOnResult(content: @Composable () -> Unit) {
-    CompositionLocalProvider(LocalScreenOnResult provides ScreenOnResultStateHolder()) {
+fun ProvideLocalLoginInfo(content: @Composable () -> Unit) {
+    CompositionLocalProvider(LocalLoginInfo provides LoginInfoStateHolder()) {
         content()
     }
 }
